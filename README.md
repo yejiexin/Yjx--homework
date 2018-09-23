@@ -895,4 +895,4 @@ Andrew Hodges; Douglas Hofstadter. Alan Turing: The Enigma: The Book That Inspir
 跳转 ^ Moore, Gordon. "Progress in Digital Integrated Electronics" IEEE, IEDM Tech Digest (1975) pp.11-13.
 跳转 ^ 半导体产业未来发展（09/02/2011） - TSMC
 跳转 ^ IBM研究员预测：“摩尔定律”的时代将要结束 互联网档案馆的存档，存档日期2009-04-16.
-跳转 ^ 克里斯·安德森，《免费：商业的未来》，北京：中信出版社，2009年第95页
+跳转 ^ 克里斯·安德森，《免费：商业的未来》，北京：中信出版社，2009年第95
