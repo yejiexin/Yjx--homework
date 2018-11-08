@@ -1,4 +1,4 @@
-#Chapter 01    Introduction
+# Chapter 01    Introduction
 1.	The difference between hardware and software?
 **Hardware**
 The physical elements of a computing system (printer, circuit boards, wires, keyboard…) 
@@ -127,7 +127,7 @@ Today's user needs no computer knowledge
 – Developing techniques that demonstrate（证明） that software can be trusted by its users.
 
 
-#Chapter 02  Number System
+# Chapter 02  Number System
 1. "Information" is that which informs, as well as that from which knowledge and data can be derived(vi. 起源;   由来;   衍生;   导出;  v. 得到( derive的过去式和过去分词 );   （从…中）得到获得;   源于;   （从…中）提取;). As it regards data, the information's existence is not necessarily coupled to(耦合) an observer, while in the case of knowledge, the information requires a cognitive（认知的，认识的） observer.
 ![](pp.png)
 property:特性，属性;财产,地产;  [戏]道具;所有权
@@ -200,7 +200,7 @@ valid digit:有效数字
 – Why had bi-quinary used in some early computer? Give your explanation
 – Simulation(模仿) is a good innovation strategy?
 
-#Charpter 3   Data Representation 1
+# Charpter 3   Data Representation 1
 1. Representing Negativve Values
  1、<font color=#00FFFF>signed-magnitude representation</font>(符号幅值表示)
 The sign represents the ordering, and the digits represent the magnitude of the number.(符号表示排序，数字表示数字的大小)
@@ -246,15 +246,359 @@ fraction:小数
 ![](jk.png)
 ![](jl.png)
 ![](kl.png)
+![](zx.png)
+![](zc.png)
+8. Represnting Real Numbers
+1、Real numbers have a whole part and a fractional part. For example 104.32, 0.999999, 357.0 and 3.14159623.
+-the digits represent values according to their position, and 
+-those position values are relative to the base.
+2、The positions to the right of the decimal point are the tenths position(10<sup>-1</sup> or one tenth), the hundredths position(10<sup>-2</sup> or one hundredth), etc.
+3、In binary, the same rules apply but the base value is 2. Since we are not working in base 10, the decimal point is referred to as a <font color=#00FFFF>fadix point(小数点)</font>.
+4、The positions to the right of the radix point in binary are the halves position(2<sup>-1</sup> or one half), the quarters position(2<sup>-2</sup> or one quarter), etc.
+5、A real value in base 10 can be defined by the following formula.
+**sign  * mantissa * 10<sup>exp</sup>**
+The representation is  called <font color=#00FFFF>foating point</font> because the number of digits is fixed but the radix point floats.
+**•Mantissa**(小数部分)
+6、<font color=#00FFFF>Scientific notation</font> A form of floating-point representation in which the decimal point(小数点) is kept to the right of the leftmost digit.
+fOr example, 12001.32708 would be written as 1.200132708E+4 in scientific notation.
+7、Likewise, a binary floating-point vale is defined by the fllowing formula:
+**sign * mantissa * 2<sup>exp</sup>**
+9. ![](zv.png)
+IEEE:电气电子工程师协会
+The institute of electrical and electronics engineers has defined three standards for storing floating-point number; two are used to store numbers in memory: single precision and double （电子电气工程师学会定义了三种存储浮点数的标准，其中两种用于存储内存中的数字：单精度和双精度。）
+10. ![](zb.png)
+excess:过剩的
+exponent：指数
+11. ![](zn.png)
+int8_t x = 0xd3;  其中0x表示十六进制，8_t表示八位。
 
+# Chapter 03 Data Representation 2
+1. Data and Computers
+Computers are multimedia devices, dealing with a vast array of information categories.Computers store,present, and help us modify(修改)
+• Numbers
+• Text
+• Audio
+• Images and graphics
+• Video
+2. Binary Reprensentations
+1、One bit can be either 0 or 1.
+Therefore, one bit can represent only two things.
+2、To represent more than two things, we need multiple bits. Two bits can represent four things because there are four combinations of 0 and 1 that can be made from two bits:00,01,10,11.
+3、In general, <font color=#DC143C>n</font> bits can represent 2<sup><font color=#DC143C>n</font></sup> things because there are 2<sup><font color=#DC143C>n</font></sup> combinations of 0 and 1 that can be made from n bits.Note that every time we increase the number of bits by 1, we double the number of things we can represent.
+3. ![](zm.png)
+4. Alalog and Digital Information(模拟和数字信息)
+1、<font color=#00FFFF>Computers are finite</font>.Computer memory and other hardware devices have only so much room to store and manipulate(操作) a certain amount of data.The goal, is to represent enough of the world to satisfy our computational needs and our senses of sight and sound.
+2、Information can be represehted in one of two ways: analog or digital.
+**Analog data**
+A continuous representation, analogous to the actual information it represents.
+**Digital data**
+A discrete(离散的) represehtation, breaking the information up into separate elements.
+A mercury thermometer(水银温度计) is an analog device. The mercury rises in a countinous flow in the tube in direct proportion(正比) to the temperature.
+3、Computers, cannot work well with analog information.So we <font color=#00FFFF>digitze</font>(数字化) information by <font color=#DCC143C>breaking it into pieces and representing those peces separatlely</font>.
+4、Why do we use binary?Modern computers are designed to use and manage binary values because the devices that store and manage the data are far **less expensive** and far more **reliable** if they only have to represent on of two possible values.
+5. Representing Text
+1、To represent a text document(文本文档) in digital form, we need to be able to represent every possible charater that may appear.
+2、There are finite number of characters to represent, so the general approach is to list them all and assign(分配) each a binary string.
+3、A <font color=#00FFFF>character set</font> is a list of characters and the codes used to <font color=#DC143C>represent each one</font>.
+4、By agreeing to use a particular character set, computer manufacturers have made the processing of text data easier.
+6. The ASCII Character Set
+1、ASCII stands for  American Standard Code for Information Interchange.The ASCII character set originally used seven bits to represent each character, allowing for 128 unique characters.
+2、Later ASCII evolved so that all eight bits were used which allows for 156 characters.
+![](xx.png)
+3、Note that the first 32 characters in the ASCII character chart do not have a simple character representation that you could print to the screen.(NULL)
+7. The Unicode Character Set 
+1、 The extender version(扩展版本) of the ASCII character set is not enough for international use.
+2、The Unicode(统一码) character set uses **16 bits per character**.Therefore, the Unicode character set can represent 256,or over 65 thousand, characters.
+3、Unicode was designed to be a superset of ASCII.That is, the first 256 characters in the Unicode character set correspond exactly to the extended ASCCII character set.
+![](xc.png)
+![](xv.png)
+![](xb.png)
+8. Representing Color
+1、Color is our perception of the various frequencies of light that reach the retinas(视网膜) of our eyes.
+2、Our retinas have three types of color photoreceptor cine cells that respond to different sets of frequencies(频率).These photoreceptor categories(光感受器类) correspond to the color of **red, green, and blue**.
+![](xn.png)
+![](xm.png)
+3、The amount of data that is used to represent a color is called the <font color=#DC143C>color depth</font>.
+4、<font color=#00FFFF>HiColor</font> is a term that indicates a <font color=#DC143C>16-bit color depth</font>. Five bits are used for each number in an RGB value and the extra bit is sometimes used to represent transparency(透明性).<font color=#00FFFF>TureColor</font> indicates a <font color=#DC143C>24-bit color depth</font>. Therefore, each number in an RGB value gets eight bits.
+9. ![](vv.png)
+10. Digitized Images
+1、Digitizing a picture is the act of representing it as a collection of individual dots called <font color=#00FFFF>pixels</font>(像素).
+2、The number of pixels used to represent a picture is called the **resolution**(分辨率).
+3、The storage of image infomation on a pixel-by-pixel basis is called a raster-graphics format(光栅图形格式）.Several popular raster file formats(栅格文件格式) including bitmap(BMP)(位图).
+![](cv.png)
+![](cb.png)
+11. text Compression(压缩)
+It is important that we find ways to store and transmit text efficiently, which means we must find ways to ccompress text.
+–**keyword encoding**
+– **run-length encoding**(游程长度编码)
+– **Huffman encoding**(赫夫曼编码)
+1、Keyword Encoding
+![](cn.png)
+![](cm.png)
+![](vb.png)
+![](vn.png)
+![](vm.png)
+compression ratio:压缩率
+2、Run-Length Ecoding
+• A single character may be repeated over and over again in a long sequence. This type of repetition doesn’t generally take place in English text, but often occurs in large data streams.
+• In run-length encoding, a sequence of repeated characters is replaced by a **flag character**(标志字符), followed by the repeated
+character, followed by a single digit that indicates how many times the character is repeated.
+![](bn.png)
+3、Huffman Encoding
+• Why should the character “X”, which is seldom used in text, take up the same number of bits as the blank, which is used very frequently? Huffman codes using variable-length bit strings to represent
+each character.
+• A few characters may be represented by five bits, and another few by six bits, and yet another few by seven bits, and so forth.
+![](bm.png)
+![](nm.png)
+12. Representing Audio Information
+• We perceive sound when a series of <font color=#DC143C>air compressions vibrate</font>(空气压缩振动) a membrane（膜） in our ear, which sends signals to our brain.
+• A stereo(立体音响) sends an electrical signal to a speaker to produce sound. This signal is an analog representation of the sound wave. The voltage in the signal varies in
+direct proportion to the sound wave.
+• To **digitize**(数字化) the signal we periodically measure the voltage of the signal and record the appropriate numeric value. The process is called **sampling**. 
+• In general, a sampling rate of around **40,000 times per second** is enough to create a reasonable sound reproduction.
+![](mn.png)
+![](mb.png)
+13. Audio Formats
+1、Audio Formats(音频格式)
+-WAV, AU, AIFF, VQF, and MP3.
+2、• MP3 is dominant
+– <font color=#DC143C>MP3 is short for MPEG-2, audio layer 3 file </font>？. 
+– MP3 employs both <font color=#00FFFF>lossy(有损的) and lossless(无损的) compression</font>.
+First it analyzes the frequency spread and compares it to mathematical models of human psychoacoustics（心理声学）
+(the study of the interrelation（相互关系） between the ear and the brain), then it discards（丢弃） information that can’t be heard by humans. Then the bit stream is compressed using a form of **Huffman encoding** to achieve additional compression.
+14. Data and Computers
+• **Data compression**  Reduction in the amount of space needed to store a piece of data. 
+• **Compression ratio** The size of the compressed data divided by the size of the original data.
+• A data compression techniques can be
+– **lossless**, which means the data can be retrieved(检索) without any loss of the original information, 
+– **lossy**, which means some information may be lost in the process of compaction(n. 压紧，紧束状态;压实;).
 
+# Chapter 4  Gates and Circuits
+1. Computers and Electricity
+1、**<font color="#00FFFF">Gate(门)</font><br />**   A devive that performs a basic operation on electrical signals
+2、**<font color=#00FFFF>Circuits(电路)</font><br /> **  Gates combined to perform more complicated tasks 
+3、There are three different, but equally powerful, notational methods for describing the behavior of gates and circuits
+<font color=#00FFFF>Boolean expressions</font><br /> (布尔表达式)
+<font color=#00FFFF>Logic diagrams</font><br /> (逻辑图)
+<font color=#00FFFF>Truth talbes</font><br /> (真值表)
+2. Constructing Gates
+**<font color=#00FFFF>Transistor</font><br /> **   A device that acts, dpending on the voltage level of an input signal, either as a wrie that conducts electricity or as a resistor that blocks the flow of electricity
+-A transistor has no moving parts, yet acts like a switch
+-It is made of a **semiconductor**(半导体) material, which is neither a particularly good conductor of electricity, such as copper, nor a particularly good insulator, such as rubber
+3. Constructing Gates
+![](qw.png)
+terminal:终端
+emitter:发射极
+![](qe.png)
+4. **NOT(非) Gate**
+•A NOT gate accepts one input value and produces one ouput value
+![](qr.png)
+•By definition, if the input value for a NOT gate is 0, the oupter value is 1, and if the input value is 1,the output is 0.
+•A NOT gate is sometimes referred to as an inverter(反相器) because it inverts the input value.
+5. **AND(与) Gate**
+•An AND gate accepts two input signals
+•If the two input values for an AND gate are both 1, the output is 1;otherwise, the output is 0.
+![](qt.png)
+6. **OR(或) Gate**
+•If the two input values are both 0, the output value is 0; otherwise, the output is 1
+![](qy.png)
+7. **XOR(异或) Gate**
+•XOR, or exclusive(adj.
+专用的;高级的;排外的;单独的
+n.
+独家新闻;专有物;独家经营的产品（或项目、设计等）;排外者) OR, gate
+-An XOR gate produces 0 if its two inputs are the same, and a 1 otherwise
+-Note the difference between the XOR gate and the OR gate; they differ only in one  input situation
+-When both input signals are 1, the OR gate produces a 1 and the XOR produces a 0.
+![](qu.png)
+![](er.jpg)
+8. Computers and Electricity
+•**Boolean expressions(布尔表达式)**
+Expressions in Boolean algebra, a mathematical notation for expressing two-valued logic
+This algebraic notation are an elegant and powerful way to demeonstrate the activity of electrical circuits
+•**Logic diagram(逻辑图)**
+A representation of a circuit 
+Each type of gate is represented by a specific graphical symbol
+•**Truth table(真值表)** 
+A table showing all possible input value and the associated output values
+9. Basic Gates
+NOT, AND, OR, XOR, NAND, NOR
+Typically, logic diagrams are black and while, and the gates are <font color=#DC143C>distinguished only by their shape</font><br /> 
+10. **NAND and NOR Gates**
+•The NAND and NOR gates are essentially the opposite of AND and OR gates, reprectively
+![](qi.png)
+11. Review of Gate Proessing 
+•A NOT gate inverts its single input value 
+•An AND gate produces 1 if both input values are 1
+•An OR gate produces 1 if one or other or both input values are 1
+•An XOR gate produces 1 if one or the other (but not both) input values are 1
+•• A NAND gate produces the opposite results of an AND gate
+•• A NOR gate produces the opposite results of an OR gate
+![](qo.png)
+(1)I' is I's inverse(逆) 
+(2)O is the result of C and I' pass through XOR
+(3)Cnext is the result of C and I' pass an AND gate
+12. Circults
+•Two general categories 
+-In a **combinational circuit(组合电路)**, the input value explicitly(明确的) determine the output 
+-In a **sequential circuit(时序电路)**, the output is a function of the input value as well as the exsting state(存在状态) of the circuit 
+•As  with gates, we can describe the operatios of entire circuits using three notations 
+– Boolean expressions
+– logic diagrams
+– truth tables
+1、Combiantional Circuits
+• Gates are combined into circuits by using the output of one gate as the input for another
+![](qp.png)
+2、Combinational Circuits
+![](we.png)
+• Because there are three inputs to this circuit, eight rows are required to describe all possible input combinations
+• This same circuit using Boolean algebra is (AB + AC)
+3、the other way
+![](wr.png)
+• We have therefore just demonstrated **circuit equivalence**
+– That is, both circuits produce the exact <font color=#DC143C>same output for each input value combination</font><br /> 
+• Boolean algebra allows us to apply provable mathematical principles to help us design logical circuits
+**Properties of Boolean Algebra**
+![](wt.png)
+13. Adders
+• At the digital logic level, addition is performed **in binary**
+• Addition operations are carried out by special circuits called, appropriately, **adders**
+•The result of adding two binary digits could produce a carry value  
+•Recall that 1 + 1 = 10 in base two
+•A circuit that computes the sum of two bits and produces the correct carry bits is called a **<font color=#DC143C>half adder</font><br /> **
+![](wy.png)
+•Circuit diagram representing a half adder
+•Two Boolean expressions:
+![](wo.png)
+![](wu.png)
+• A circuit called a **full adder** takes the carry-in value into account
+![](wi.png)
+14. Circuits as Memory
+•Digital circuits can be used to <font color=#DC143C>store information</font><br /> 
+•These circuits form a sequential(相继的) circuit, because the output of the circuit is also used  as input to the circuit
+•More about <font color="#00FFFF">latch</font><br /> 
+![](wp.png)
+![](aqa.png)
+15. Integrated Circuits(集成电路)
+Integrated circuit(also called a **chip(芯片)** A piece of silicon(硅) on which multiple gates have been embedded(adj.
+植入的，深入的，内含的
+v. 把…嵌入，埋入( embed的过去式和过去分词 ))
+These silicon pieces are mounted(安装) on a plastic or ceramic(陶瓷) package(封装) with pins(头针) along the edges that can be soldered onto(焊上) circuit boards or insetred into(嵌入) appropriate sockets(插座)
+16. CPU Chips
+•The most important integrated circuit in any computer is the Central Processing Unit, or CPU
+•Each CPU chip has a large number of pins through which essentially all communication in a computer system occurs
+17.  There are eight 1bit full adder integrated circuits. Combine them to 8bit adder circuit using the following box diagram.
+![](qa.png)
+![](qj.jpg)
+18.SR-latch(SR锁存器)
+<https://wenku.baidu com/view/55a228e7d4bbfd0a79563c1ec5da50e2524dd1d8.html>
 
+# Chapter 5  Computing Components(组件)
+![](qs.png)
+![](qd.png)
+auxiliary storage device:辅助存储装置
+arithmetic/logic unit:运算单元
+1. 冯·诺伊曼结构
+冯·诺伊曼结构，也称普林斯顿结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置，因此程序指令和数据的宽度相同，如英特尔公司的8086中央处理器的程序指令和数据都是16位宽。
+目前使用冯·诺伊曼结构的**中央处理器**和**微控制器**有很多。除了上面提到的英特尔公司的8086，英特尔公司的其他中央处理器、ARM公司的ARM7、MIPS公司的MIPS处理器也采用了冯·诺伊曼结构。
+冯·诺伊曼结构由五个部分组成，包括：运算器、逻辑控制装置、存储器、输入和输出设备.(An arithmetic unit, a logic control device, a memory, an input and output device.)
+原理:设计思想之一是二进制，他根据电子元件双稳工作的特点，建议在电子计算机中采用二进制。报告提到了二进制的优点，并预言，二进制的采用将大简化机器的逻辑线路。
+2. Memory(存储器)
+•Memory is a collection of cells, each with a unique physical address(地址)
+![](qf.png)
+3. Address Space
+•To access abyte in memory requires an identifier(标识符). The total number of uniquely identifiable locations in memory is called the address space(寻址空间)。
+![](qg.png)
 
+|• A computer has 32 MB (megabytes) of memory. How many bits are needed to address any single byte in memory?|
+|---|
+|• The memory address space is 32 MB, or 2<sup>25</sup> (2<sup>5</sup> x 2<sup>20</sup>). This means you need log2 2<sup>25</sup> or 25 bits, to address each byte.|
+|• 一个PC主板，支持最多16G物理内存，它有多少地址线（bit）？|
+|16 = 2<sup>4</sup>, G = 2<sup>30</sup>, so it needs 4 + 30 address line|
+4. 小知识：int 在内存中的存储
+![](qh.png)
+5. RAM and ROM
+•RAM stands for **Random Access Memory**(随机存取存储器) 
+-Inherent in the idea of being able to access each location is the ability to change the contents of each location
+•ROM stands for **Read Only Memory**(只读存储器)
+-The contents in locations in ROM cannot be changed
+•RAM is **volatile**(不稳定的), ROM is not
+-This means that RAM does not retain(保持) its bit configuration(位配置) when the power is turned off, but ROM does.
+6. Fundamental about CPUs(关于CPU的基本原理)
+![](qj.png)
+中央处理器主要包括运算器（算术逻辑运算单元，ALU，Arithmetic Logic Unit）和高速缓冲存储器（Cache）及实现它们之间联系的数据（Data）、控制及状态的总线（Bus）。它与内部存储器（Memory）和输入/输出（I/O）设备合称为电子计算机三大核心部件。
+<https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033?fr=aladdin>
+<https://wenku.baidu.com/view/ebe974ab760bf78a6529647d27284b73f342364c.html>
+7. Arithmetic/Logic Unit
+• Performing basic arithmetic operations such as adding
+• Performing logical operations such as AND, OR, and NOT
+• Most modern ALUs(算术逻辑单元) have a small amount of special storage units called registers(寄存器)
 
+32位计算机指ALU能执行32位加法，或寄存器有32位
+8. Control Unit
+• **Control unit** The organizing force in the computer
+• There are **two registers** in the control unit
+– The **instruction register (IR)** contains the instruction that is being executed
+– The **program counter (PC)** contains the address of the next instruction to be executed
+• ALU and the control unit called the **Central Processing Unit**, or CPU
+9. Connecting CPU and Memory
+![](qq.png)
+10. Bus and Memory
+• Data BUS(总线)
+– Transfer a word data to CPU parallel
+– **Word length** 32bit mean transfer 32bit between CPU and Memory
+• Address BUS
+– Select a word data to CPU parallel
+– **Address BUS 32bit** mean address space 4G 
+11. Cache Memory(缓存)
+•A CPU cashe 
+-is a cache used by the central processing unit of a computer to rduce the average time to access(获取) memory
+-The cashe is a smaller, faster memory which stores copies of the data from the most frequently used main memory locations.
+•Most modern CPUs have at least three indepenndent cashes:
+– an **instruction cache** to speed up executable instruction fetch
+– a **data cache** to speed up data fetch and store
+– a **translation lookaside buffer**(翻译后援缓冲器) used to speed up virtual-tophysical address(虚拟地形地址) translation for both executable instructions and data.
+12.  64bit CPU指什么的宽度是64位的？
+CPU64位是指处理器的**位宽(Bit width**，也就是指微处理器一次执行指令的数据带宽，64位处理器属于目前主流的处理器产品，64位处理器的优势在于：
+1、64位CPU一次就能处理64位即8个字节的数据。
+2、理论上在一个时钟周期内64位系统处理的数据量是32位系统的两倍。
+3、64位CPU的优势还体现在系统对内存的控制上。由于地址使用的是特殊的整数，而64位CPU的一个ALU（算术逻辑运算器）和寄存器可以处理更大的整数，也就是更大的地址。
+13. Flowof Infformation
+The parts are connected to one another by a collection of wires called a <font color=#00FFFF>bus</font><br/>
+![](qk.png)
+14. Input/Output Units 
+• **Input Unit**  A device through which data and programs from the outside world are
+entered into the computer
+– <font color=#DC43C>Keyboard, the mouse, and scanning devices</font><br/>
+• **Output unit**  A device through which results stored in the computer memory are made available to the outside world
+– <font color=#DC143C>Printers and video display terminals</font><br/>(打印机和视频显示终端)
+15. ![](ql.png)
+16. Secondary Dtorage Devices
+1、Because most of main memory is volatile(易失的) and limited, it is essential that there be other types of storage devices where programs and data can be stored when they are no lonnger being processed
+2、Secondary storage devices can be installed within the computer box at the factory or added later as needed
+17. **Magentic Disks**
+A read/write head travels across a spinnig maggnetic(磁的) disk, retrieving or recording data
+![](qz.png)
+**Compact Disks**
+• A **CD** drive uses a laser to read information stored optically on a plastic disk
+• **CD-ROM** is Read-Only Memory
+• **DVD** stands for Digital Versatile Disk(数字通用光盘)
+**Magnetic Tape**
+The first truly mass auxiliary storage device was the magnetic tape drive(磁带驱动器)
+![](qc.png)
+18. ![](qb.png)
+![](qv.png)
+Pipelining:流水线技术
+ tandem:串列
+ 在一个整体的计算部分, 把处理器的每个处理器有助于在串联.
+![](am.png)
+• Instruction level parallelism:指令级并行性
+Thread level parallelism:线程级并行性
+Data parallelism:数据并行性
+![](abb.png)
+![](azz.png)
 
-
-
-#Chapter 7 Programming Bately(Loower level programming language)
+# Chapter 7 Programming Bately(Loower level programming language)
 
 1. Connecting CPU and Memory(储存器；内存)
 
@@ -395,3 +739,13 @@ instructions==
 
 ==A programming paradigm, derived（起源于，基于） from structured programming（结构化程序设计技术）, based upon the concept of the procedure call（过程调用）==
 又称**过程式程序设计**、过程化编程，一种编程典范，有时会被视为是**指令式编程**的同义语。派生自结构化编程（Structured programming），主要采取程序调用（procedure call）或函数调用（function call）的方式来进行流程控制。流程则由包涵一系列运算步骤的程序（Procedures），例程（routines），子程序（subroutines）, 方法（methods），或函数（functions）来控制。在程序运行的任何一个时间点，都可以调用某个特定的程序。任何一个特定的程序，也能被任意一个程序或是它自己本身调用。
+
+
+#Charpter 6  Problem Solving and Algorithm Design(top-down method) 问题求解与算法设计（自顶向下方法）
+
+1. Problem sliving 
+The act of finding a solution to perplexing(复杂的，令人困惑的)，distressing(使痛苦), vexing(使烦恼), or unsettled question.
+• G. Polya wrote How to Solve It: A New Aspect of Mathematical Method
+• His How to Solve It list is quite general
+– Written in the context of solving mathematical problems
+– The list becomes applicable(适用的) to all types of problems
