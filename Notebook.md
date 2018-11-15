@@ -743,9 +743,158 @@ instructions==
 
 #Charpter 6  Problem Solving and Algorithm Design(top-down method) 问题求解与算法设计（自顶向下方法）
 
-1. Problem sliving 
+![](09.png)
+1. Problem solving (问题解决)
 The act of finding a solution to perplexing(复杂的，令人困惑的)，distressing(使痛苦), vexing(使烦恼), or unsettled question.
 • G. Polya wrote How to Solve It: A New Aspect of Mathematical Method
 • His How to Solve It list is quite general
 – Written in the context of solving mathematical problems
 – The list becomes applicable(适用的) to all types of problems
+
+2. Ask Questions...
+...to understand the problem
+– What do I know about the problem?
+– What is the information that I have to process
+in order the find the solution?
+– What does the solution look like?
+– What sort of special cases exist?
+– How will I recognize that I have found
+the solution?
+![](07.png)
+![](06.png)
+![](05.png)
+![](04.png)
+
+**Look for Familiar Things**
+• You should never reinvent the wheel
+• In computing, you see certain problems again and again in different guises
+• A good programmer sees a task, or perhaps part of a task (a subtask), that has been solved before and plugs in the solution
+![](03.png)
+
+3. Divide and Conquer(分而治之)
+•Break up a large problem into amaller units that we can handle
+-Appliles the concept of abstraction
+-The divide-and-conquer approach can be applied over and over again unit each subtask is manageable
+![](08.png)
+![](02.png)
+
+4. 另一个案例
+![](01.png)
+![](009.png)
+这里是对**规模**的分解，还有一种是上面一个案例的从**时间维度**的角度分解的。
+
+5. Algorithms(算法)
+•<font color=#DC143C>A set of instructions</font><br/> for solving a problem or subproblem <font color=#DC143C>in a finite amount of time</font><br/> using a <font color=#DC143C>finite amount of data</font><br/>
+•The instruction must be <font color=#00FFFF>unambiguous</font><br/>(明确的)
+![](008.png)
+6. Computer Problem-Sloving
+
+![](006.png)
+
+7. The Interactions Between Problem-Solving Phases
+![](005.png)
+
+8. Pseudocode(伪代码)
+• Uses a mixture of English and formatting to make the steps in the solution explicit
+
+**IF-THEN-ELSE**
+Binary choice on a given Boolean condition is indicated by the use of four keywords: IF, THEN, ELSE, and ENDIF. The general form is:
+
+IF condition THEN
+sequence 1
+ELSE
+sequence 2
+ENDIF
+
+**WHLIE**
+WHILE condition
+sequence
+ENDWHILE
+
+**CASE**
+CASE expression OF
+condition 1 : sequence 1 
+condition 2 : sequence 2 
+... 
+condition n : sequence n 
+OTHERS: 
+default sequence
+ENDCASE
+
+**REPEAT-UNTIL**
+REPEAT
+sequence
+UNTIL condition
+
+**FOR**
+FOR iteration bounds
+sequence
+ENDFOR
+
+**NESTED CONSTRUCTS**(嵌套结构)
+Example
+
+SET total to zero 
+REPEAT
+READ Temperature 
+IF Temperature > Freezing THEN 
+    INCREMENT total 
+END IF
+UNTIL Temperature < zero 
+Print total
+
+**INVOKING SUBPROCEDURES**(调用子过程)
+Use the CALL keyword. For example:
+
+CALL AvgAge with StudentAges 
+CALL Swap with CurrentItem and TargetItem 
+CALL Account.debit with CheckAmount 
+CALL getBalance RETURNING aBalance 
+CALL SquareRoot with orbitHeight RETURNING nominalOrbit
+
+**EXCEPTION HANDLING**(异常处理)
+BEGIN 
+        statements 
+    EXCEPTION 
+        WHEN exception type 
+            statements to handle exception
+        WHEN another exception type 
+            statements to handle exception
+    END 
+
+![](007.png)
+
+9. Developing an Algotithm
+
+• The plan must be suitable in a suitable form
+• Two methodologies that currently used
+– Top-down design（自上而下）
+– Object-oriented design(面向对象)
+**Top-Down Design**
+• Breaking the problem into a set of subproblems called modules
+• Creating a hierarchical structure(层次结构) of problems and subproblems (modules模块)
+![](001.png)
+![](002.png)
+
+10. Testing the Algorithm
+
+• The process itself must be tested
+• Testing at the algorithm development phase involves looking at each level of the top-down design
+
+• **Desk checking** Working through a design at a desk with a pencil and paper 
+• **Walk-through** Manual simulation(人工模拟) of the design by the team members, taking sample data values and simulating the design using the sample data
+• **Inspection** One person (not the designer) reads the design (handed out in advance) line by line while the others point out errors
+
+#Charpter 6   Problem Solving(Object Oriennted Design)
+
+1. Problem Solving
+**Problem solving** The act of finding a solution to a perplexinng, distressing, vexing, or unsettled question.
+2. Alan Curtis Key & Smalltalk
+![](221.png)
+![](222.png)
+3. Object-Oriented Design(面向对象设计)
+•A problem-solving methodology that produces a solution to a problem in terms  of self-contained entities called objects (一种解决问题的方法，它从一个称为对象的自包含实体中产生一个问题的解决方案。)
+•<font color=#00FFFF>Object</font><br/> A thing or entity that makes sence within the context of the problem (在问题的背景下实现的事物或实体)
+For example, a student
+
+
