@@ -889,12 +889,65 @@ BEGIN
 
 1. Problem Solving
 **Problem solving** The act of finding a solution to a perplexinng, distressing, vexing, or unsettled question.
+
 2. Alan Curtis Key & Smalltalk
 ![](221.png)
 ![](222.png)
-3. Object-Oriented Design(面向对象设计)
+
+3. **Object-Oriented Design(面向对象设计)**
 •A problem-solving methodology that produces a solution to a problem in terms  of self-contained entities called objects (一种解决问题的方法，它从一个称为对象的自包含实体中产生一个问题的解决方案。)
 •<font color=#00FFFF>Object</font><br/> A thing or entity that makes sence within the context of the problem (在问题的背景下实现的事物或实体)
 For example, a student
+• A group of similar objects is described by an **object class**, or <font color=#00FFFF>class</font><br/> 
+• A class contains fields that represent the **properties and behaviors** of the class
+**具有相同特性（数据元素）和行为（功能）的对象的抽象就是类。因此，对象的抽象是类，类的具体化就是对象，也可以说类的实例是对象，类实际上就是一种数据类型。**
+**类具有 属性 ，它是对象的状态的抽象，用数据结构来描述类的属性。**
+**类具有 操作 ，它是对象的行为的抽象，用操作名和实现该操作的方法来描述。**
+– A <font color=#00FFFF>field</font><br/>  can contain data value(s) and/or methods (subprograms)
+**对象具有状态，一个对象用数据值来描述它的状态。**
+– A <font color=#00FFFF>method</font><br/> is a named algorithm that manipulates（操作） the data values in the object
+**对象还有操作，用于改变对象的状态，对象及其操作就是对象的行为。**
+
+4. ![](223.png)
+![](224.png)
+![](225.png)
+
+5. Relationships Between Classes
+• Containment (包含)
+– <font color=#DC143C>“part-of”</font><br/>
+– An address class may be part of the definition of a student class
+• Inheritance (遗传；继承)
+– Classes can inherit data and behavior from other classes – <font color=#DC143C>“is-a"</font><br/>
+
+6. ![](226.png)
+
+7. ![](227.png)
+
+8. ![](228.png)
+![](229.png)
+![](230.png)
+
+9. Information Hiding / Abstraction
+•<font color=#DC143C>Information Hiding</font><br/> and <font color=#DC143C>Abstraction</font><br/> are two sides of the same coin.     
+—— **Information** Hiding The practice of hiding the details of a module(模块) with the goal of controlling access(访问) to the details of the module. 
+—— **Abstraction** A model of a complex system that includes only the details essential to the viewer.
+
+• Abstraction is the result with the details hidden
+– **Data abstraction** Separation of the logical view of data from their implementation（实施）. 
+– **Procedural abstraction** Separation of the logical view of actions from their implementation. 
+– **Control abstraction** Separation of the logical view of a control structure from its implementation.
+
+10. ![](231.png)
+![](232.png)
+![](233.png)
+![](234.png)
+![](235.png)
+![](236.png)
+
+#Chapter 9  Abstract Data Types and Algorithms
+
+
+
+
 
 
