@@ -946,8 +946,172 @@ For example, a student
 
 #Chapter 9  Abstract Data Types and Algorithms
 
+1. Abstract Data Types
 
+• **Abstract data type** A data type whose properties (data and operations) are specified independently of any particular implementation(独立于任何特定实现指定的数据类型。)
 
+**The goal in design is to reduce complexity through abstraction**
 
+![](348.png)
 
+• In computing, we view data from three perspectives
+– **Application level**
+  • View of the data within a particular problem
+– **Logical level**
+  • An abstract view of the data values (the domain领域) and the set of operations to manipulate them
+– **Implementation实施 level**
+  • A specific representation of the structure to hold the data items and the coding of the operations in a programming language
 
+• **Data structures** The implementation of a composite data(复合数据) fields in an abstract data type
+• **Containers** Objects whole role is to hold and manipulate(操纵) other objects
+
+2. 
+![](237.png)
+![](239.png)
+
+3. ![](243.png)
+
+4. 图书馆找书
+
+![](244.png)
+![](245.png)
+![](246.png)
+![](247.png)
+
+实现过程描述：伪代码
+
+5. 算法与优化
+
+![](248.png)
+![](249.png)
+
+6. Arrays
+
+• An array is a **named collection of homogeneous items** in which individual items are accessed by their place within the collection
+– The place within the collection is called an **index**
+
+![](251.png)
+![](252.png)
+
+7. Array-Based Implementations
+
+• If there is **no ordering** on the items in the container, we call the container **unsorted**
+• If there is an ordering, we call the container **sorted**
+
+![](253.png)
+![](254.png)
+![](255.png)
+
+8. Linked Implementation(链表)
+
+• **Linked implementation** An implementation based on the concept of a **node**
+• A node is made up of **two pieces of information**
+– the item that the user wants in the list, and
+– a pointer to the next node in the list
+
+![](256.png)
+![](257.png)
+![](258.png)
+![](259.png)
+![](261.png)
+
+9. 容器：链表实现与数组实现对比
+
+• 空间花费：数组少 
+• 按index访问数据：数组快 
+• 查找
+– 有序列表：数组有更好的查找算法
+– 无序列表：两者都只能顺序查找 
+• 插入数据和删除数据：链表方便
+
+空间花费（已知多大）用数组。链表不适用于二分算法。
+数组取任何值的时间代价是等同的，而链表访问不同数据的时间不同，因此**遍历**用数组更快。
+
+10. List
+
+• List operations
+– **Create** itself
+– **Insert** an item
+– **Delete** an item
+– **Print** itself
+– Know the **number of items** it contains
+
+• **Generic data type(通用数据类型)** (or **class**)
+ A data type or class in which the operations are specified but the type or class of the objects being manipulated is not
+
+11. Sorting
+
+• Because sorting a large number of elements can be extremely timeconsuming, a good sorting algorithm is very desirable
+• We present several quite different sorting algorithms
+
+**<font color=#DC143C>Selection Sort</font><br/>**
+
+• List of names
+– Put them in **alphabetical order(z字母顺序)**
+• Find the name that comes first in the alphabet, and write it on a second sheet of paper
+• Cross out the name on the original list
+• Continue this cycle until all the names on the original list have been crossed out and written onto the second list, at which point the second list is sorted
+• A slight adjustment to this manual approach does away with the need to **duplicate space（复制空间）**
+– As you cross a name off the original list, a free space opens up
+– Instead of writing the minimum value on a second list, exchange it with the value currently in the position where the crossed-off item should go
+
+![](262.png)
+![](263.png)
+
+**<font color=#DC143C>Bubble Sort</font><br/>**
+
+• A selection sort that uses a different scheme for finding the minimum value
+– Starting with the last list element, we **compare successive pairs of elements（连续元素对）**, swapping whenever the bottom element of the pair is smaller than the one above it
+
+![](264.png)
+![](265.png)
+
+**<font color=#DC143C>Quicksort</font><br/>**
+
+• Based on the idea that it is faster and easier to sort two small lists than one larger one
+– Given a large stack of final exams to sort by name
+– Pick a splitting(分裂) value, say L, and divide the stack（栈） of tests into two piles, A–L and M–Z
+– note that the two piles do not necessarily contain the same number of tests
+– Then take the first pile and subdivide（细分） it into two piles, A–F and G–L
+– This division process goes on until the piles are small enough to be easily sorted by hand
+
+**<font color=#DC143C>Binary Search</font><br/>**
+
+• A **sequential search** of a list begins at the beginning of the list and continues until the item is found or the entire list has been searched
+• A **binary search** looks for an item in a list using a **divide-and-conquer** strategy
+
+• Binary Search Algorithm
+– Binary search algorithm assumes that the items in the list being searched are **sorted**
+– The algorithm begins at the **middle** of the list in a binary search
+– If the item for which we are searching is less than the item in the middle, we know that the item won’t be in the second half of the list
+– Once again we examine the “middle” element (which is really the item 25% of the way into the list)
+– The process continues with each comparison cutting in half the portion（部分） of the list where the item might be
+
+![](266.png)
+![](267.png)
+![](268.png)
+
+12. ![](269.png)
+
+13. Stacks(栈)
+
+• A **stack** is an abstract data type in which accesses(访问) are made at only one end
+– **LIFO**, which stands for **Last In First Out**
+– The insert is called **Push** and the delete is called **Pop**
+– Empty() 检测栈中是否存在数据项
+
+![](271.png)
+
+14. Queues(队列)
+
+• A **Queue** is an abstract data type in which items are entered at one end and removed from the other end
+– **FIFO**, for **First In First Out**
+– Like a **waiting line** in a bank or supermarket
+– No standard queue terminology(术语)
+•**Enqueue, Enque, Enq, Enter, and Insert** are used for the insertion operation
+• **Dequeue, Deque, Deq, Delete, and Remove**
+are used for the deletion operation.
+
+15. 
+![](272.png)
+![](273.png)
