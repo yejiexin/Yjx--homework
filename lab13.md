@@ -48,6 +48,7 @@ int main() {
 		MoveSnake();
 		PrintMap();
 	}
+	if (!gamerun) GameOver();
 	return 0;
 }
 ```
@@ -301,6 +302,7 @@ int main() {
 		if (!IsFood) SpawnFood ();
 		PrintMap();
 	}
+	if (!gamerun) GameOver();
 	return 0;
 }
 ```
