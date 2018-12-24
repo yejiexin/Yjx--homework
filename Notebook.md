@@ -1115,3 +1115,338 @@ are used for the deletion operation.
 15. 
 ![](272.png)
 ![](273.png)
+
+
+
+
+
+
+
+
+
+
+# Chapter 15, 16  Networks & WWW
+
+1. Networking
+
+**Computer network**  A collectionn of computing devices that are connected in various ways in order to <font color=#DC143C>communicate</font><br/> and <font color=#DC143C>share resources</font><br/>
+
+Usually, the connections between computers in a network are made using physical wires or cables
+
+However, some connections are <font color=#00FFFF>wireless</font><br/>, using radio waves of infrared(红外线的) signals
+
+The generic term <font color=#00FFFF>node</font><br/> or <font color=#00FFFF>host</font><br/>(节点或主机) refers to any device on a network
+
+<font color=#00FFFF>Date transfer rate</font><br/>  The speed with data is <font color=#DC143C>moved from one place on a network to another</font><br/>
+
+-802.11g/n    54Mbps/?Mbps  (bps--bit per second)
+
+-下载速度  102KBytes
+
+<font color=#00FFFF>Date transfer rate</font><br/> and <font color=#00FFFF>distance</font><br/> is a <font color=#DC143C>key issue</font><br/> in computer networks
+
+Computer networks have opened up an entire frontier in the world of computing callled the <font color=#DC143C>client/server model</font><br/>(客户端/服务器模型)
+
+![](665.png)
+
+<font color=#00FFFF>File server</font><br/>(文件服务器)  A computer that stores and manages files for multiple users on a network
+
+FTP(File Transfer Protocol 文件传输协议)：
+
+-FTP 服务器  用来存储文件，用户可以使用FTP客户端通过FTP协议访问位于FTP服务器上的资源。
+
+-FTP 客户端
+
+在开发网站的时候，通常利用FTP协议把网页或程序传到Web服务器上。此外，由于FTP传输效率非常高，在网络上传输大的文件时，一般也采用该协议。
+
+默认情况下FTP协议使用TCP端口中的 20和21这两个端口，其中20用于传输数据，21用于传输控制信息。但是，是否使用20作为传输数据的端口与FTP使用的传输模式有关，如果采用主动模式，那么数据传输端口就是20；如果采用被动模式，则具体最终使用哪个端口要服务器端和客户端协商决定。
+
+<font color=#00FFFF>Web server</font><br/>(网络服务器)  A computer dedicated to(专用于) responding requests(from the brower client 浏览器客户端) for web pages
+
+-服务器
+
+-浏览器 IE， Safari
+
+-HTTP协议（HyperText Transfer Protocol超文本传输协议）
+
+超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。HTTP是一个客户端和服务器端请求和应答的标准（TCP）。客户端是终端用户，服务器端是网站。
+
+-HTML
+
+超文本标记语言，标准通用标记语言下的一个应用。
+“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。
+超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。
+
+2. Types of Networks
+
+**<font color=#00FFFF>Local_area network(LAN 局域网)</font><br/>** A network that connects a relatively small number of machines in a relatively close geographical area
+
+局域网连接往往不会超过256个设备
+
+•Various configurations(配置), called topologies(拓扑结构), have been used to administer(管理) LANs
+
+-<font color=#DC143C>Ring topology(环拓扑)</font><br/> A configuration that connects all nodes in a closed loop on which messages travel in one direction
+
+-<font color=#DC143C>Star topology(星形拓扑)</font><br/> A configuration that centers around one node to which all others are connected and through which all messages are sent 
+
+-<font color=#DC143C>Bus topology(总线拓扑)</font><br/> All nodes are connected to a single communication line that carries messages in both directions
+
+![](8765.png)
+
+A bus technology called <font color=#00FFFF>Ethernet</font><br/>(以太网) has become the industry standard for local-area networks
+
+以太网（Ethernet）是一种计算机局域网技术。IEEE组织的IEEE 802.3标准制定了以太网的技术标准，它规定了包括物理层的连线、电子信号和介质访问层协议的内容。以太网是目前应用最普遍的局域网技术，取代了其他局域网标准如令牌环、FDDI和ARCNET。
+
+以太网的标准拓扑结构为总线型拓扑，但目前的快速以太网（100BASE-T、1000BASE-T标准）为了减少冲突，将能提高的网络速度和使用效率最大化，使用交换机（Switch hub）来进行网络连接和组织。如此一来，以太网的拓扑结构就成了星型；但在逻辑上，以太网仍然使用总线型拓扑和CSMA/CD（Carrier Sense Multiple Access/Collision Detection，即载波多重访问/碰撞侦测）的总线技术。
+
+以太网实现了网络上无线电系统多个节点发送信息的想法，每个节点必须获取电缆或者信道的才能传送信息，有时也叫作以太（Ether）。（这个名字来源于19世纪的物理学家假设的电磁辐射媒体-光以太。后来的研究证明光以太不存在。） 每一个节点有全球唯一的48位地址也就是制造商分配给网卡的MAC地址，以保证以太网上所有节点能互相鉴别。由于以太网十分普遍，许多制造商把以太网卡直接集成进计算机主板。
+
+以太网通讯具有**自相关性**的特点，这对于电信通讯工程十分重要。(自相关性是指随机误差项的各期望值之间存在着相关关系，称随机误差项之间存在自相关性（autocorrelation）或序列相关，公式为：Yt＝β0+β1X1t+…+βmXmt+et)
+
+**交换机（Switch hub）**  意为“开关”是一种用于电（光）信号转发的网络设备。它可以为接入交换机的任意两个网络节点提供独享的电信号通路。最常见的交换机是以太网交换机。其他常见的还有电话语音交换机、光纤交换机等。
+
+原理：交换机工作于OSI参考模型的第二层，即数据链路层。交换机内部的CPU会在每个端口成功连接时，通过将MAC地址和端口对应，形成一张MAC表。在今后的通讯中，发往该MAC地址的数据包将仅送往其对应的端口，而不是所有的端口。因此，交换机可用于划分数据链路层广播，即冲突域；但它不能划分网络层广播，即广播域。 
+
+交换机拥有一条很高带宽的背部总线和内部交换矩阵。交换机的所有的端口都挂接在这条背部总线上，控制电路收到数据包以后，处理端口会查找内存中的地址对照表以确定目的MAC（网卡的硬件地址）的NIC（网卡）挂接在哪个端口上，通过内部交换矩阵迅速将数据包传送到目的端口，目的MAC若不存在，广播到所有的端口，接收端口回应后交换机会“学习”新的MAC地址，并把它添加入内部MAC地址表中。使用交换机也可以把网络“分段”，通过对照IP地址表，交换机只允许必要的网络流量通过交换机。通过交换机的过滤和转发，可以有效的减少冲突域，但它不能划分网络层广播，即广播域。
+
+**<font color=#00FFFF>Wide-area network(WAN 广域网)</font><br/>**  A network connects two or more loca-area networks over <font color=#DC143C>a potentially large geographic distance</font><br/>
+
+Often one particular node on a LAN is set up to serve as g <font color=#00FFFF>gateway(网关)</font><br/> to handle all communication going between that LAN and other networks
+
+Communication between networks is called internetworking
+
+The <font color=#00FFFF>Internet(因特网)</font><br/>, as we know it today, is essentially the untimate wide-area network, <font color=#DC143C>spannig the entire globe</font><br/>
+
+WAN = LAN + LAN + LAN + ···(there are n LAN)
+if n is equal to the number of all LAN in the world, then this WAN is equal to the Internet.
+
+![](432.png)
+
+![](ddf.jpg)
+
+**路由器（Router）**，是连接因特网中各局域网、广域网的设备，它会根据信道的情况自动选择和设定路由，以最佳路径，按前后顺序发送信号。 路由器是互联网络的枢纽，"交通警察"。目前路由器已经广泛应用于各行各业，各种不同档次的产品已成为实现各种骨干网内部连接、骨干网间互联和骨干网与互联网互联互通业务的主力军。路由和交换机之间的主要区别就是交换机发生在OSI参考模型第二层（数据链路层），而路由发生在第三层，即网络层。这一区别决定了路由和交换机在移动信息的过程中需使用不同的控制信息，所以说两者实现各自功能的方式是不同的。
+
+路由器（Router）又称网关设备（Gateway）是用于连接多个逻辑上分开的网络，所谓逻辑网络是代表一个单独的网络或者一个子网。当数据从一个子网传输到另一个子网时，可通过路由器的路由功能来完成。因此，路由器具有判断网络地址和选择IP路径的功能，它能在多网络互联环境中，建立灵活的连接，可用完全不同的数据分组和介质访问方法连接各种子网，路由器只接受源站或其他路由器的信息，属网络层的一种互联设备。
+
+局域网之间建立连接的网关得名字是唯一的，但某一局域网内其他网关的名字可与其他局域网相同。
+
+**<font color=#DC143C>Metropolitan-area network(MAN 城域网)</font><br/>**  The communication infrastructures(通信基础设施) that have been developed in and around large cities
+
+![](6666.png)
+
+3. Internet Connetions
+
+**<font color=#DC143C>Internet backbon(互联网骨干)</font><br/>**  A set of high-speed networks that carry Internet traffc
+
+骨干网（Backbone Network）是用来连接多个区域或地区的高速网络。每个骨干网中至少有一个和其他骨干网进行互联互通的连接点。不同的网络供应商都拥有自己的骨干网，用以连接其位于不同区域的网络。
+
+These networks are <font color=#DC143C>provided by companies</font><br/> such as CISCO,华为，AT&T, GTE, and IBM
+
+**<font color=#DC143C>Internet service provider(ISP 互联网服务提供商)</font><br/>**  a company that provides other companies or individuals with access to the Internet
+
+There are various technologies available that you can use to connect a home computer to the Internet 
+
+-A <font color=#00FFFF>phone modem(电话调制解调器)</font><br/> converts data into an analog(模拟) audio signal for transfer over a telephone line, and then a modem at the destination(目的地) converts is back again into data 
+
+-A <font color=#00FFFF>digital subscriber line(DSL 数字用户线路)</font><br/>  uses regular copper(铜) phone lines to transfer digital data to and from the phone company's central office
+
+-A <font color=#00FFFF>cable modem(电缆调制解调器)</font><br/>  uses the same line that your cable TV signal come in on to transfer the data back and forth
+(使用与有线电视信号进入的线路相同的线路来回传输数据)
+
+**<font color=#00FFFF>Broadband(宽带)</font><br/>**  A connection in which transfer speeds are <font color=#DC143C>faster than 128K bits per second</font><br/>
+
+-DSL connections and cable（电缆） <font color=#DC143C>modems are broadband connections</font><br/>
+
+-The speed for <font color=#DC143C>downloads</font><br/>(getting data from the Internet to your home computer) may not be the same as <font color=#DC143C>uploads</font><br/>(sending data frm your home computer to the Internet)
+
+4. Packet Switching
+
+To improve the efficiency of transferring informationn over a shared communication line, messages <font color=#DC143C>are divided into fixed-sized, numbered</font><br/> <font color=#00FFFF>packets</font><br/>
+
+Network devices called routers(路由器) are used to direct packets between networks
+
+![](ddf.png)
+
+为什么用“包交换”技术？
+
+假设有10M的数据，传输出错概率为10%（实际没有那么高）。如果以10M整体发送，那么它有10%的概率出错，即无法传输，若将其分成10分，那么我们可以保证有9分成功输送。
+
+路由器的分配问题：包的发送顺序 != 接收顺序。
+
+5. Open Systems
+
+<font color=#00FFFF>Proprietary system（专有系统）</font><br/>  A system that uses technologies kept private by a particular commercial vendor
+
+One system couldn’t communicate with another, leading to the need for
+
+<font color=#00FFFF>Interoperability（互操作性）</font><br/>  The ability of softwave and hardware on multiple machines and from multilpe commercial vendors to ommunciate （在多台机器上和多个商业供应商的软件和硬件通信能力）
+
+Leading to 
+
+<font color=#00FFFF>Open systems</font><br/>  Systems based on a common model of network architecture(网络结构) and a suite of(一系列) protocols(协议) used in its  implementation(安装启用)
+
+![](aass.png)
+
+The International Organization for Standardization(ISO) established the **Open System Interconnection(OSI) Reference Model**
+
+Each layer deals with a particular aspect of network communication
+
+6. Network Protocols(协议)
+
+·Network protocols are layered such that each one relies on the protocols the underlie it 
+
+·Sometimes referred to as a **protocol stack**
+
+![](4545.png)
+
+IP:
+<https://baike.baidu.com/item/IP/224599>
+
+TCP:
+<https://baike.baidu.com/item/TCP/33012>
+
+UDP:
+<https://baike.baidu.com/item/UDP>
+
+SMTP:
+<https://baike.baidu.com/item/SMTP>
+
+Telent:
+<https://baike.baidu.com/item/telnet#1>
+
+FTP:
+<https://baike.baidu.com/item/ftp/13839>
+
+7. TCP/IP
+
+• **TCP** stands for Transmission Control Protocol
+TCP software **breaks messages into packets**, hands them off to the IP software for delivery, and then orders and reassembles(重新组装) the packets at their destination
+• **IP** stands for Internet Protocol
+IP software deals with the **routing of packets** through the maze of interconnected networks to their final destination
+
+TCP/IP(.cont)
+
+• **UDP** stands for User Datagram Protocol
+– It is an alternative to TCP
+– The main difference is that TCP is **highly reliable**, at the cost of decreased performance, while UDP is less reliable, but generally faster
+
+比较：
+根据数据可靠性与要求来确定使用哪种协定
+UDP——用于视屏聊天、电话等
+TCP——发送word文档等
+
+8. Hight_Level Protocols
+
+• Other protocols build on the foundation established by the TCP/IP protocol suite
+– Simple Mail Transfer Protocol (SMTP)
+– File Transfer Protocol (FTP)
+– Telnet
+– Hyper Text Transfer Protocol (http)
+
+![](6665.png)
+
+9. MIME Types
+
+• Related to the idea of network protocols and standardization is the concept of a file’s MIME type
+– MIME stands for **Multipurpose Internet Mail Extension**(多用途互联网邮件扩充)
+– Based on a document’s MIME type, an application program can decide how to deal with the data it is given
+
+<https://baike.baidu.com/item/MIME/2900607>
+
+10. Firewalls
+
+• Firewall A machine and its software that serve as a special gateway to a network, protecting it from inappropriate access
+– **Filters(透过)** the network traffic that comes in, checking the **validity(有效性)** of the messages as much as possible and erhaps denying some messages altogether
+– Enforces(强制执行) an organization’s **access control policy(访问控制策略)**
+
+![](676.png)
+
+防火墙、路由器一般设置在操作系统的第三层，而防火墙一般放在路由器里。
+杀毒软件——文件层
+
+现在的IP地址有32位（4 x 8),连2的32次方个局域网
+
+11. Network Addresses
+
+• Network software translates a hostname into its corresponding IP address
+For example      205.39.145.18   (IP V4)
+
+• An IP address can be split into(分成)
+– **network address**, which specifies a specific network 
+– **host number(主机号)**, which specifies a particular machine in that network
+
+![](77.png)
+
+now an IP address can be stored in four or six bytes(IP V4 or IP V6)
+
+12. Domain Name System(域名系统)
+
+• A hostname consists of the computer name followed by **the domain name**
+• **csc.villanova.edu** is the **domain name**
+– A domain name is separated into two or more sections that specify the organization, and possibly a subset of an organization, of which the computer is a part
+– Two organizations can have a computer named the same thing because the domain name makes it clear which one is being
+referred to
+• The very last section of the domain is called its **top-level domain (TLD) name**(顶级域名)
+
+![](577.png)
+
+• Organizations based in countries other than the United States use a top-level domain that corresponds to their two-letter(两个字母) country codes
+
+![](565.png)
+
+China - .ch
+
+• The **domain name system (DNS)** is chiefly(主要地) used to translate hostnames into numeric IP addresses
+– DNS is an example of a **distributed database**（分布式数据库）
+– If that server can resolve the hostname, it does so
+– If not, that server asks **another domain name server**
+
+![](3434.jpg)
+
+![](78.png)
+
+# Software Engineering Review
+
+1. 理解软件工程————概念
+
+· 软件工程：(1)将**系统化、规范化、可度量**的方法应用与软件的开发、运行和维护的过程， 即将工程化应用于软件中。(2)对(1)中所述方法 的研究。——IEEE[IEE93]
+工程化{
+    系统化：目标明确、步骤清晰
+    规范化：每一步都有标准
+    可度量：能量化评估
+}
+
+· 软件工程：是指导计算机软件开发和维护的工程学科。采用工程的概念、原理、技术和方法来开发与维护软件，把经过实践考验而证明正确的**管理技术**和当前能够得到的最好的**技术方法**结合起来，这就是软件工程。
+
+2. 理解软件工程————要素
+
+· 工程化、管理、技术。融合多个学科的知识。
+
+· 人：软件工程项目中最重要、也是最活跃的的资源因素。组织的原则和模式、角色定义和分工、人员的配备、绩效的评定等等。       1992-1995.9 SEI P-CMM V1.0
+
+**人体工程学**
+
+子程序的代码<=30行，便与人较快理解
+人对程序的忍耐极限是3秒（用户感受）  所以超过3秒，进度条来缓解
+还有颜色、内容等
+
+**人机交互**
+
+<https://baike.baidu.com/item/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/61313?fr=aladdin>
+
+**人既是生产工具，又是生产资料**
+
+
+
+
+
+
+
+
+
+
+
+
+
+<font color=#DC143C></font><br/>
+<font color=#00FFFF></font><br/>
