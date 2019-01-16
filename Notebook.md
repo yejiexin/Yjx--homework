@@ -416,7 +416,7 @@ For example, if the maximum number of decimal digits we can represent is <font c
 
 3、A formula for computing the negative representation
 
-**Negative(I) = 10<sup>k</sub> - I, where k is the number of digits**
+**Negative(I) = 10<sup>k-I</sub>**, **where k is the number of digits**
 
 This reprentation of negative numbers is called the **ten's complement**
 
