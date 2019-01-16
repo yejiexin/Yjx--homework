@@ -1,247 +1,477 @@
 # Chapter 01    Introduction
+
 1.	The difference between hardware and software?
+
 **Hardware**
+
 The physical elements of a computing system (printer, circuit boards, wires, keyboard…) 
+
 **Software** 
+
 The programs that provide the instructions for a computer to execute.
+
 2. Layer of Computing System
+
 ![](1111.png)
+
 3. **Abstraction(抽象)**
+
 A mental model that removes complex details.
+
 This is a key concept. Abstraction will reappear throughout the text.
+
 4. Early History of Computing
+
 **Abacus(算盘)**
+
 An early device to record numeric values.
+
 **Blaise Pascal**
+
 Mechanical device to add, subtract, divide & multiply.
+
 **Joseph Jacquard**
+
 Jacquard’s Loom, the punched card(穿孔卡片).
+
 **Charles Babbage**
+
 Analytical Engine.
+
 **Ada Lovelace**
+
 First Programmer,the loop.
+
 **Alan Turing**
+
 Turing Machine, Artificial Intelligence Testing.
+
 **Harvard Mark I,ENIAC,UIVAC I**
+
 Early computers launch new era in mathematics, physics, engineering and economics
+
 5. First Generation Hardwave(1951-1959)
+
 **Vacuum Tubes(真空管)**
+
 Large, not very reliable, generated a lot of heat.
+
 **Magnetic Drum(磁鼓)**
+
 Memory device that rotated under a read/write head.(在读写头下旋转的存储设备)
+
 **Card Readers(读卡器) -> Magnetic Tape Drives（磁带驱动器）**
+
 Sequential auxiliary storage devices.(序贯辅助存储设备)
+
 6. Second Generation Hardwave(1959-1965)
+
 **Transistor(晶体管)**
+
 Replaced vacuum tube, fast, small, durable（耐用）, cheap.
+
 **Magnetic Cores(磁芯)**
+
 Replaced magnetic drums, information available ==instantly==.
+
 **Magnetic Disks(磁盘)**
+
 Replaced magnetic tape, data can be accessed directly（直接访问）.
+
 7. Third Generation Hardwave(1965-1971)
+
 **Integrate Circuits(集成电路)**
-Replaced circuit boards, smaller, cheaper, faster, more
-reliable. 
+
+Replaced circuit boards, smaller, cheaper, faster, more reliable. 
+
 **Transistors**
+
 Now used for memory construction(存储器结构).
+
 **Terminal（终点站）**
+
 An input/output device with a keyboard and screen.
+
 8. Fourth Generation Hardwave(1971-?)
+
 **Large-scale Integration**
+
 Great advances in chip(芯片) technology.
+
 **PCs, the Commercial Market(商业市场), Workstations**
+
 Personal Computers were developed as new companies like Apple and Atari came into being. Workstations emerged（出现）.
+
 9. **Moore's Law**
+
 The number of transistors incorporated in a chip will approximately double every 24 months.
 (芯片中的晶体管数量每24个月大约增加一倍。)
+
 10. Parallel Computing and Networking(并行计算与网络化)
+
 **Parallel Computing**
+
 Computers rely on interconnected central processing units that increasse processing speed.
+
 (计算机依赖于互连的中央处理单元，从而提高处理速度。)
+
 **Network**
+
 With the Ethernet small computers could be connected and share resources. A file serve connected PCs in the late 1980s.
+
 **ARRANET and LANs -> Internet(阿帕网 与 局域网 -> 互联网)**
+
 11. First Generation Sofewave(1951-1959)
-<font color=#00FFFF>Machine Language</font>
+
+<font color=#00FFFF>Machine Language</font><br/>
+
 Computer programs were written in binary(1s and 0s)
-<font color=#00FFFF>Assembly Languages and translators</font>
+
+<font color=#00FFFF>Assembly Languages and translators</font><br/>
+
 Programs were written in artificial programming languages and were then translated into machine language
-<font color=#00FFFF>Programmer Changes</font>
+
+<font color=#00FFFF>Programmer Changes</font><br/>
+
 Programers divide into <font color=#DC143C>applicatio programmers</font> and <font color=#DC143C>systems programmers</font>.
+
 12. Second Generation Software (1959-1965)
+
 **High Level Languages**
+
 Use English-like statements and make programming easier.
+
 Fortran, COBOL, Lisp are exampie.
+
 ![](uu.png)
+
 13. Third Generation Softwave(1965-1971)
-<font color=#00FFFF>Systems Software</font>
+
+<font color=#00FFFF>Systems Software</font><br/>
+
 -untility programs(实用程序)
+
 -language translators
+
 -and the operating system, which decides which programs to run and when.
-<font color=#00FFFF>Separation between Users and Hardware</font>(用户与硬件分离)
+
+<font color=#00FFFF>Separation between Users and Hardware</font><br/> (用户与硬件分离)
+
 Computer programmers began to write programs to be used by people who did not know how to program.
+
 ![](ii.png)
+
 14. Fourth Generation Software(1971-1989)
-<font color=#00FFFF>Structured Programming</font>(结构化程序设计)
+
+<font color=#00FFFF>Structured Programming</font><br/> (结构化程序设计)
+
 Pascal, C, C++
-<font color=#00FFFF>New Application Software for Users</font>
+
+<font color=#00FFFF>New Application Software for Users</font><br/>
+
 Spreadsheets, word processors, database management systems.(电子表格、文字处理机、数据库管理系统)
+
 15. Fifth Generation Software (1990- present)
-<font color=#00FFFF>Microsoft</font>
+
+<font color=#00FFFF>Microsoft</font><br/>
+
 The Windows operating system, and other Microsoft application programs dominate the market
-<font color=#00FFFF>**O**bject-**O**riented **D**esign</font>
-Based on a hierarchy of data objects(i.e.Java)
-<font color=#00FFFF>World Wide Web</font>
+
+<font color=#00FFFF>**O**bject-**O**riented **D**esign</font><br/>
+
+Based on a hierarchy(层级，层次结构) of data objects(i.e.Java)
+
+<font color=#00FFFF>World Wide Web</font><br/>
+
 Allows easy global communication thought the Internet.
-<font color=#00FFFF>New Users</font>
+
+<font color=#00FFFF>New Users</font><br/> 
+
 Today's user needs no computer knowledge
+
 15. Computer Science is a mathematical, scientific, or engineering discipline.
+
 16. Systems Areas of Computer Science
+
 • Algorithms and Data Structures(算法和数据结构)
+
 • Programming Languages(程序设计语言)
+
 • Architecture(建筑)
+
 • Operating Systems(操作系统)
+
 • Software Methodology and Engineering(软件方法学和工程)
+
 • Human-Computer Communication(人机通信)
+
 17. Application Areas of Computer Science
+
 • Numerical and Symbolic Computation(数字和符号计算)
+
 • Databases and Information Retrieval (数据库和信息检索)
+
 • Artificial Intelligence and Robotics(人工智能和机器人学)
+
 • Graphics(图形)
+
 • Organizational Informatics(组织信息学)
+
 • Bioinformatics(生物信息学)
+
 18. Some Challenges for CS
+
 ![](oo.png)
+
 19. Software Industry
+
 • The economies(经济) of all developed nations(国家) are dependent on software.
+
 • More and more systems are software controlled
+
 • Software engineering is concerned with theories, methods and tools for professional software development.
+
 • Expenditure(生产总值) on software represents a significant fraction of GNP in all developed countries.
+
 20. Challenges in software engineering
+
 • Heterogeneity, delivery and trust.
+
 • Heterogeneity（异质性）
+
 – Developing techniques for building software that can cope with heterogeneous platforms and execution environments;
+
 • Delivery
+
 – Developing techniques that lead to faster delivery（交付） of software;
+
 • Trust
+
 – Developing techniques that demonstrate（证明） that software can be trusted by its users.
 
 
 # Chapter 02  Number System
+
 1. "Information" is that which informs, as well as that from which knowledge and data can be derived(vi. 起源;   由来;   衍生;   导出;  v. 得到( derive的过去式和过去分词 );   （从…中）得到获得;   源于;   （从…中）提取;). As it regards data, the information's existence is not necessarily coupled to(耦合) an observer, while in the case of knowledge, the information requires a cognitive（认知的，认识的） observer.
+
 ![](pp.png)
-property:特性，属性;财产,地产;  [戏]道具;所有权
+
+property:特性，属性;财产,地产;道具;所有权
+
  sensory:adj. 感觉的，感受的，感官的;   传递感觉的; 
+
  representation:n. 表现;   陈述;   表现…的事物; 有代理人
+
  complexity:n. 复杂性，错综复杂的状态;   复杂的事物;   复合物;  
+
 2. Binary(二进制)
+
 ![](as.png)
+
 3. Numbers
+
 1、Natural Numbers
+
 **Zero** and any number obtained by repeatedly adding one to it.
+
 Examples: 100, 0, 45645, 32
+
 2、Negative Numbers
+
 A value less than 0, with a - sign
+
 Examples: -24, -1, -45645, -32
+
 3、Integers(整数)
+
 A natural number, a negative number, zero
+
 4、Rational Numbers(有理数)
+
 A integer or the quotient(商) of two integers
+
 Examples:-249, -1, 0, 3/7, -2/5
+
 4. Countinf(计数)
+
 ![](ad.png)
+
 5. The base(基) of a number determines the number of digits and the value of digit positions.
+
 **Positional Notation**(进位制/位值计数法)
+
 ![](af.png)
 ![](ag.png)
 ![](ah.png)
+
 **Binary Number**(二进制)
+
 ![](aj.png)
+
 **Bases Higher than 10**
+
 <font color=#00FFFF>Base 16</font> has 16 digits:
+
 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E, and F
+
 6. Converting **Octal**(八进制) to **Decimal**(十进制)
+
 ![](ak.png)
+
 Converting **Hexadecimal**(十六进制) to Decimal
+
 ![](al.png)
+
 Converting Binary to Decimal
+
 ![](sd.png)
+
 7. Arthmetic in Binary(二进制算数)
+
 1、![](sf.png)
+
 2、Subtracting Binary Numbers(减去二进制数)
+
 ![](sg.png)
+
 3、Converting Binary to Octal
+
 ![](sh.png)
+
 4、Converting Binary to Hexadecimal
+
 ![](sj.png)
+
 8. Power of 2 Number System
+
 ![](sk.png)
+
 9. Converting for Natural Numbers 
+
 ![](sl.png)
+
 10. Converting Decimal to Other Bases
+
 ![](df.png)
+
 1、Converting Decimal to Hexadecimal
+
 ![](dg.png)
+
 2、Converting Decimal to Binary
+
 ![](dh.png)
+
 11. **Converting for Natural Numbers**
+
 ![](dj.png)
+
 12.  Bi-quinary coded decimal(双五进制编码小数)
+
 -Bi-quinary coded decimal is a numeral encoding scheme(数字编码方案) ussed in many abacuses(算盘) and in some early computers(计算器).
+
 -The term(术语) bi-quinary(双五元) indicates that the code comprises(包括) both a two-state(bi)(两态) and a five-state(quinary) component(分量).
+
 12. Bi-quinary in some early computers 
+
 ![](dk.png)
+
 valid digit:有效数字
+
 ![](dl.png)
+
  parity check bit:奇偶校验位
+
 13. Bi-quinary & Binary
+
 • The Bi-quinary example illustrates:
+
 – The bi-quinary difference between abacus and IBM360 and UNIVAC?
+
 – Why had bi-quinary used in some early computer? Give your explanation
+
 – Simulation(模仿) is a good innovation strategy?
 
 # Charpter 3   Data Representation 1
+
 1. Representing Negativve Values
+
  1、<font color=#00FFFF>signed-magnitude representation</font>(符号幅值表示)
+
 The sign represents the ordering, and the digits represent the magnitude of the number.(符号表示排序，数字表示数字的大小)
+
 ![](fg.png)
+
 For example, if the maximum number of decimal digits we can represent is <font color=#00FFFF>two</font>, we can let 1 through 49 be the positive numbers 1 through 49 and let 50 through 99 reprensent the negative numbers -50 through -1. 
+
 ![](fh.png)
+
 2、To perform addition within this scheme, you just add the numbers together and <font color=#DC143C>discard any carry</font>(丢弃任何进位).
+
 ![](fj.png)
+
 **A-B = A+(-B)**.We can subtract(减去) one number from another by adding the negative of the second to the first.
+
 ![](fk.png)
+
 3、A formula for computing the negative representation
+
 **Negative(I) = 10<sup>k</sub> - I, where k is the number of digits**
+
 This reprentation of negative numbers is called the **ten's complement**
+
 2. Binary and Computers
+
 1、bit
+
 -A bit is the <font color=#00FFFF>basic of information</font> in computing and digital communciations.A bit can have only one of two values, and may therefore be physically implemented(实施) with a two-state device. The most common representation of threse value are 0 and 1.
+
 2、byte
+
 -8 bits. (c types maybe int8_t, uint8_t, char )
+
 3、integer
+
 -A natural number, a negative number
+
 ![](fl.png)
+
 3. A approach of two's complement
+
 1、Definition: ones' complement(补码)
+
 -Binary digit x,y satisfy x + y = 1. That x is ones' complement of y. 
+
 -1 is ones' complement of 0
+
 -0 is ones' complement of 
+
 2、two's complement
+
 ![](gh.png)
+
 4. Representing Negative Values
- • Addition and subtraction are
-accomplished the same way as in 10’s acomplement arithmetic
+
+ • Addition and subtraction are accomplished the same way as in 10’s acomplement arithmetic
+
 ![](gj.png)
+
 • Notice that with this representation, <font color=#DC143C>the leftmost bit in a negative number is always a 1</font>.
+
 5. Numer Overflow(溢出)
+
 1、<font color=#00FFFF>Overflow</font> occurs when the value that we compute <font color=#DC143C>cannot fit if into the number of bits</font> we have allocated(分配) for the result. For example, if each value is stored using eight bits, adding 127 to 3 overflows.
+
 ![](gk.png)
+
 2、Overflow is a classic example of the type of problem we encounter by mapping an infinite(无限的) world onto a finite machine.
+
 6. ![](gl.png)
 ![](hj.png)
 7. ![](hk.png)
+
 fraction:小数
+
 ![](hl.png)
 ![](jk.png)
 ![](jl.png)
@@ -249,249 +479,461 @@ fraction:小数
 ![](zx.png)
 ![](zc.png)
 8. Represnting Real Numbers
+
 1、Real numbers have a whole part and a fractional part. For example 104.32, 0.999999, 357.0 and 3.14159623.
+
 -the digits represent values according to their position, and 
+
 -those position values are relative to the base.
+
 2、The positions to the right of the decimal point are the tenths position(10<sup>-1</sup> or one tenth), the hundredths position(10<sup>-2</sup> or one hundredth), etc.
-3、In binary, the same rules apply but the base value is 2. Since we are not working in base 10, the decimal point is referred to as a <font color=#00FFFF>fadix point(小数点)</font>.
+
+3、In binary, the same rules apply but the base value is 2. Since we are not working in base 10, the decimal point is referred to as a <font color=#00FFFF>fadix point(小数点)</font><br/>.
+
 4、The positions to the right of the radix point in binary are the halves position(2<sup>-1</sup> or one half), the quarters position(2<sup>-2</sup> or one quarter), etc.
+
 5、A real value in base 10 can be defined by the following formula.
+
 **sign  * mantissa * 10<sup>exp</sup>**
-The representation is  called <font color=#00FFFF>foating point</font> because the number of digits is fixed but the radix point floats.
+
+The representation is  called <font color=#00FFFF>foating point</font><br/> because the number of digits is fixed but the radix point floats.
 **•Mantissa**(小数部分)
-6、<font color=#00FFFF>Scientific notation</font> A form of floating-point representation in which the decimal point(小数点) is kept to the right of the leftmost digit.
+
+6、<font color=#00FFFF>Scientific notation</font><br/> A form of floating-point representation in which the decimal point(小数点) is kept to the right of the leftmost digit.
+
 fOr example, 12001.32708 would be written as 1.200132708E+4 in scientific notation.
+
 7、Likewise, a binary floating-point vale is defined by the fllowing formula:
+
 **sign * mantissa * 2<sup>exp</sup>**
+
 9. ![](zv.png)
+
 IEEE:电气电子工程师协会
+
 The institute of electrical and electronics engineers has defined three standards for storing floating-point number; two are used to store numbers in memory: single precision and double （电子电气工程师学会定义了三种存储浮点数的标准，其中两种用于存储内存中的数字：单精度和双精度。）
+
 10. ![](zb.png)
+
 excess:过剩的
 exponent：指数
+
 11. ![](zn.png)
+
 int8_t x = 0xd3;  其中0x表示十六进制，8_t表示八位。
 
 # Chapter 03 Data Representation 2
+
 1. Data and Computers
+
 Computers are multimedia devices, dealing with a vast array of information categories.Computers store,present, and help us modify(修改)
+
 • Numbers
+
 • Text
+
 • Audio
+
 • Images and graphics
+
 • Video
+
 2. Binary Reprensentations
+
 1、One bit can be either 0 or 1.
+
 Therefore, one bit can represent only two things.
+
 2、To represent more than two things, we need multiple bits. Two bits can represent four things because there are four combinations of 0 and 1 that can be made from two bits:00,01,10,11.
-3、In general, <font color=#DC143C>n</font> bits can represent 2<sup><font color=#DC143C>n</font></sup> things because there are 2<sup><font color=#DC143C>n</font></sup> combinations of 0 and 1 that can be made from n bits.Note that every time we increase the number of bits by 1, we double the number of things we can represent.
+
+3、In general, bits can represent 2<sup><font color=#DC143C>n</font><br/></sup> things because there are 2<sup><font color=#DC143C>n</font><br/></sup> combinations of 0 and 1 that can be made from n bits.Note that every time we increase the number of bits by 1, we double the number of things we can represent.
+
 3. ![](zm.png)
+
 4. Alalog and Digital Information(模拟和数字信息)
+
 1、<font color=#00FFFF>Computers are finite</font>.Computer memory and other hardware devices have only so much room to store and manipulate(操作) a certain amount of data.The goal, is to represent enough of the world to satisfy our computational needs and our senses of sight and sound.
+
 2、Information can be represehted in one of two ways: analog or digital.
+
 **Analog data**
+
 A continuous representation, analogous to the actual information it represents.
+
 **Digital data**
+
 A discrete(离散的) represehtation, breaking the information up into separate elements.
+
 A mercury thermometer(水银温度计) is an analog device. The mercury rises in a countinous flow in the tube in direct proportion(正比) to the temperature.
-3、Computers, cannot work well with analog information.So we <font color=#00FFFF>digitze</font>(数字化) information by <font color=#DCC143C>breaking it into pieces and representing those peces separatlely</font>.
+
+3、Computers, cannot work well with analog information.So we <font color=#00FFFF>digitze</font><br/>(数字化) information by <font color=#DCC143C>breaking it into pieces and representing those peces separatlely</font><br/>.
+
 4、Why do we use binary?Modern computers are designed to use and manage binary values because the devices that store and manage the data are far **less expensive** and far more **reliable** if they only have to represent on of two possible values.
+
 5. Representing Text
+
 1、To represent a text document(文本文档) in digital form, we need to be able to represent every possible charater that may appear.
+
 2、There are finite number of characters to represent, so the general approach is to list them all and assign(分配) each a binary string.
+
 3、A <font color=#00FFFF>character set</font> is a list of characters and the codes used to <font color=#DC143C>represent each one</font>.
+
 4、By agreeing to use a particular character set, computer manufacturers have made the processing of text data easier.
+
 6. The ASCII Character Set
+
 1、ASCII stands for  American Standard Code for Information Interchange.The ASCII character set originally used seven bits to represent each character, allowing for 128 unique characters.
+
 2、Later ASCII evolved so that all eight bits were used which allows for 156 characters.
+
 ![](xx.png)
+
 3、Note that the first 32 characters in the ASCII character chart do not have a simple character representation that you could print to the screen.(NULL)
+
 7. The Unicode Character Set 
+
 1、 The extender version(扩展版本) of the ASCII character set is not enough for international use.
+
 2、The Unicode(统一码) character set uses **16 bits per character**.Therefore, the Unicode character set can represent 256,or over 65 thousand, characters.
+
 3、Unicode was designed to be a superset of ASCII.That is, the first 256 characters in the Unicode character set correspond exactly to the extended ASCCII character set.
+
 ![](xc.png)
 ![](xv.png)
 ![](xb.png)
+
 8. Representing Color
+
 1、Color is our perception of the various frequencies of light that reach the retinas(视网膜) of our eyes.
+
 2、Our retinas have three types of color photoreceptor cine cells that respond to different sets of frequencies(频率).These photoreceptor categories(光感受器类) correspond to the color of **red, green, and blue**.
+
 ![](xn.png)
 ![](xm.png)
-3、The amount of data that is used to represent a color is called the <font color=#DC143C>color depth</font>.
-4、<font color=#00FFFF>HiColor</font> is a term that indicates a <font color=#DC143C>16-bit color depth</font>. Five bits are used for each number in an RGB value and the extra bit is sometimes used to represent transparency(透明性).<font color=#00FFFF>TureColor</font> indicates a <font color=#DC143C>24-bit color depth</font>. Therefore, each number in an RGB value gets eight bits.
+
+3、The amount of data that is used to represent a color is called the <font color=#DC143C>color depth</font><br/>.
+
+4、<font color=#00FFFF>HiColor</font><br/> is a term that indicates a <font color=#DC143C>16-bit color depth</font><br/>. Five bits are used for each number in an RGB value and the extra bit is sometimes used to represent transparency(透明性).<font color=#00FFFF>TureColor</font><br/> indicates a <font color=#DC143C>24-bit color depth</font><br/>. Therefore, each number in an RGB value gets eight bits.
+
 9. ![](vv.png)
+
 10. Digitized Images
+
 1、Digitizing a picture is the act of representing it as a collection of individual dots called <font color=#00FFFF>pixels</font>(像素).
+
 2、The number of pixels used to represent a picture is called the **resolution**(分辨率).
+
 3、The storage of image infomation on a pixel-by-pixel basis is called a raster-graphics format(光栅图形格式）.Several popular raster file formats(栅格文件格式) including bitmap(BMP)(位图).
+
 ![](cv.png)
 ![](cb.png)
+
 11. text Compression(压缩)
+
 It is important that we find ways to store and transmit text efficiently, which means we must find ways to ccompress text.
+
 –**keyword encoding**
+
 – **run-length encoding**(游程长度编码)
+
 – **Huffman encoding**(赫夫曼编码)
 1、Keyword Encoding
+
 ![](cn.png)
 ![](cm.png)
 ![](vb.png)
 ![](vn.png)
 ![](vm.png)
+
 compression ratio:压缩率
+
 2、Run-Length Ecoding
+
 • A single character may be repeated over and over again in a long sequence. This type of repetition doesn’t generally take place in English text, but often occurs in large data streams.
+
 • In run-length encoding, a sequence of repeated characters is replaced by a **flag character**(标志字符), followed by the repeated
 character, followed by a single digit that indicates how many times the character is repeated.
+
 ![](bn.png)
+
 3、Huffman Encoding
-• Why should the character “X”, which is seldom used in text, take up the same number of bits as the blank, which is used very frequently? Huffman codes using variable-length bit strings to represent
-each character.
+
+• Why should the character “X”, which is seldom used in text, take up the same number of bits as the blank, which is used very frequently? Huffman codes using variable-length bit strings to represent each character.
 • A few characters may be represented by five bits, and another few by six bits, and yet another few by seven bits, and so forth.
+
 ![](bm.png)
 ![](nm.png)
+
 12. Representing Audio Information
-• We perceive sound when a series of <font color=#DC143C>air compressions vibrate</font>(空气压缩振动) a membrane（膜） in our ear, which sends signals to our brain.
-• A stereo(立体音响) sends an electrical signal to a speaker to produce sound. This signal is an analog representation of the sound wave. The voltage in the signal varies in
-direct proportion to the sound wave.
+
+• We perceive sound when a series of <font color=#DC143C>air compressions vibrate</font><br/>(空气压缩振动) a membrane（膜） in our ear, which sends signals to our brain.
+
+• A stereo(立体音响) sends an electrical signal to a speaker to produce sound. This signal is an analog representation of the sound wave. The voltage in the signal varies in direct proportion to the sound wave.
+
 • To **digitize**(数字化) the signal we periodically measure the voltage of the signal and record the appropriate numeric value. The process is called **sampling**. 
+
 • In general, a sampling rate of around **40,000 times per second** is enough to create a reasonable sound reproduction.
+
 ![](mn.png)
 ![](mb.png)
+
+
 13. Audio Formats
+
 1、Audio Formats(音频格式)
+
 -WAV, AU, AIFF, VQF, and MP3.
+
 2、• MP3 is dominant
-– <font color=#DC143C>MP3 is short for MPEG-2, audio layer 3 file </font>？. 
-– MP3 employs both <font color=#00FFFF>lossy(有损的) and lossless(无损的) compression</font>.
+
+– <font color=#DC143C>MP3 is short for MPEG-2, audio layer 3 file </font><br/>. 
+
+– MP3 employs both <font color=#00FFFF>lossy(有损的) and lossless(无损的) compression</font><br/>.
+
 First it analyzes the frequency spread and compares it to mathematical models of human psychoacoustics（心理声学）
-(the study of the interrelation（相互关系） between the ear and the brain), then it discards（丢弃） information that can’t be heard by humans. Then the bit stream is compressed using a form of **Huffman encoding** to achieve additional compression.
+
+(the study of the interrelation（相互关系） between the ear and the brain), then it discards（丢弃） information that can’t be heard by humans. 
+Then the bit stream is compressed using a form of **Huffman encoding** to achieve additional compression.
+
 14. Data and Computers
+
 • **Data compression**  Reduction in the amount of space needed to store a piece of data. 
+
 • **Compression ratio** The size of the compressed data divided by the size of the original data.
+
 • A data compression techniques can be
+
 – **lossless**, which means the data can be retrieved(检索) without any loss of the original information, 
+
 – **lossy**, which means some information may be lost in the process of compaction(n. 压紧，紧束状态;压实;).
 
+
 # Chapter 4  Gates and Circuits
+
 1. Computers and Electricity
-1、**<font color="#00FFFF">Gate(门)</font><br />**   A devive that performs a basic operation on electrical signals
+
+1、**<font color="#00FFFF">Gate(门)</font><br/>**   A devive that performs a basic operation on electrical signals
+
 2、**<font color=#00FFFF>Circuits(电路)</font><br /> **  Gates combined to perform more complicated tasks 
+
 3、There are three different, but equally powerful, notational methods for describing the behavior of gates and circuits
+
 <font color=#00FFFF>Boolean expressions</font><br /> (布尔表达式)
+
 <font color=#00FFFF>Logic diagrams</font><br /> (逻辑图)
+
 <font color=#00FFFF>Truth talbes</font><br /> (真值表)
+
 2. Constructing Gates
+
 **<font color=#00FFFF>Transistor</font><br /> **   A device that acts, dpending on the voltage level of an input signal, either as a wrie that conducts electricity or as a resistor that blocks the flow of electricity
+
 -A transistor has no moving parts, yet acts like a switch
+
 -It is made of a **semiconductor**(半导体) material, which is neither a particularly good conductor of electricity, such as copper, nor a particularly good insulator, such as rubber
+
 3. Constructing Gates
+
 ![](qw.png)
+
 terminal:终端
+
 emitter:发射极
 ![](qe.png)
+
 4. **NOT(非) Gate**
+
 •A NOT gate accepts one input value and produces one ouput value
+
 ![](qr.png)
+
 •By definition, if the input value for a NOT gate is 0, the oupter value is 1, and if the input value is 1,the output is 0.
+
 •A NOT gate is sometimes referred to as an inverter(反相器) because it inverts the input value.
 5. **AND(与) Gate**
+
 •An AND gate accepts two input signals
+
 •If the two input values for an AND gate are both 1, the output is 1;otherwise, the output is 0.
+
 ![](qt.png)
+
 6. **OR(或) Gate**
+
 •If the two input values are both 0, the output value is 0; otherwise, the output is 1
+
 ![](qy.png)
+
 7. **XOR(异或) Gate**
-•XOR, or exclusive(adj.
-专用的;高级的;排外的;单独的
-n.
-独家新闻;专有物;独家经营的产品（或项目、设计等）;排外者) OR, gate
+
+•XOR, or exclusive(adj.专用的;高级的;排外的;单独的 n.独家新闻;专有物;独家经营的产品（或项目、设计等）;排外者) OR, gate
 -An XOR gate produces 0 if its two inputs are the same, and a 1 otherwise
+
 -Note the difference between the XOR gate and the OR gate; they differ only in one  input situation
+
 -When both input signals are 1, the OR gate produces a 1 and the XOR produces a 0.
+
 ![](qu.png)
 ![](er.jpg)
+
 8. Computers and Electricity
+
 •**Boolean expressions(布尔表达式)**
+
 Expressions in Boolean algebra, a mathematical notation for expressing two-valued logic
+
 This algebraic notation are an elegant and powerful way to demeonstrate the activity of electrical circuits
+
 •**Logic diagram(逻辑图)**
+
 A representation of a circuit 
+
 Each type of gate is represented by a specific graphical symbol
+
 •**Truth table(真值表)** 
+
 A table showing all possible input value and the associated output values
+
 9. Basic Gates
+
+
 NOT, AND, OR, XOR, NAND, NOR
+
 Typically, logic diagrams are black and while, and the gates are <font color=#DC143C>distinguished only by their shape</font><br /> 
+
 10. **NAND and NOR Gates**
+
 •The NAND and NOR gates are essentially the opposite of AND and OR gates, reprectively
+
 ![](qi.png)
+
 11. Review of Gate Proessing 
+
 •A NOT gate inverts its single input value 
+
 •An AND gate produces 1 if both input values are 1
+
 •An OR gate produces 1 if one or other or both input values are 1
+
 •An XOR gate produces 1 if one or the other (but not both) input values are 1
+
 •• A NAND gate produces the opposite results of an AND gate
+
 •• A NOR gate produces the opposite results of an OR gate
+
 ![](qo.png)
+
 (1)I' is I's inverse(逆) 
+
 (2)O is the result of C and I' pass through XOR
+
 (3)Cnext is the result of C and I' pass an AND gate
+
 12. Circults
+
 •Two general categories 
+
 -In a **combinational circuit(组合电路)**, the input value explicitly(明确的) determine the output 
+
 -In a **sequential circuit(时序电路)**, the output is a function of the input value as well as the exsting state(存在状态) of the circuit 
+
 •As  with gates, we can describe the operatios of entire circuits using three notations 
+
 – Boolean expressions
+
 – logic diagrams
+
 – truth tables
+
 1、Combiantional Circuits
+
 • Gates are combined into circuits by using the output of one gate as the input for another
+
 ![](qp.png)
+
 2、Combinational Circuits
+
+
 ![](we.png)
+
 • Because there are three inputs to this circuit, eight rows are required to describe all possible input combinations
+
 • This same circuit using Boolean algebra is (AB + AC)
+
 3、the other way
+
 ![](wr.png)
+
+
 • We have therefore just demonstrated **circuit equivalence**
+
 – That is, both circuits produce the exact <font color=#DC143C>same output for each input value combination</font><br /> 
+
 • Boolean algebra allows us to apply provable mathematical principles to help us design logical circuits
+
+
 **Properties of Boolean Algebra**
+
 ![](wt.png)
+
 13. Adders
+
 • At the digital logic level, addition is performed **in binary**
+
 • Addition operations are carried out by special circuits called, appropriately, **adders**
+
 •The result of adding two binary digits could produce a carry value  
+
 •Recall that 1 + 1 = 10 in base two
+
 •A circuit that computes the sum of two bits and produces the correct carry bits is called a **<font color=#DC143C>half adder</font><br /> **
+
 ![](wy.png)
+
 •Circuit diagram representing a half adder
+
 •Two Boolean expressions:
+
 ![](wo.png)
 ![](wu.png)
+
 • A circuit called a **full adder** takes the carry-in value into account
+
 ![](wi.png)
+
 14. Circuits as Memory
+
 •Digital circuits can be used to <font color=#DC143C>store information</font><br /> 
+
 •These circuits form a sequential(相继的) circuit, because the output of the circuit is also used  as input to the circuit
+
 •More about <font color="#00FFFF">latch</font><br /> 
+
 ![](wp.png)
 ![](aqa.png)
+
 15. Integrated Circuits(集成电路)
-Integrated circuit(also called a **chip(芯片)** A piece of silicon(硅) on which multiple gates have been embedded(adj.
-植入的，深入的，内含的
+
+Integrated circuit(also called a **chip(芯片)** A piece of silicon(硅) on which multiple gates have been embedded(adj.植入的，深入的，内含的
 v. 把…嵌入，埋入( embed的过去式和过去分词 ))
+
 These silicon pieces are mounted(安装) on a plastic or ceramic(陶瓷) package(封装) with pins(头针) along the edges that can be soldered onto(焊上) circuit boards or insetred into(嵌入) appropriate sockets(插座)
+
 16. CPU Chips
+
 •The most important integrated circuit in any computer is the Central Processing Unit, or CPU
+
 •Each CPU chip has a large number of pins through which essentially all communication in a computer system occurs
+
 17.  There are eight 1bit full adder integrated circuits. Combine them to 8bit adder circuit using the following box diagram.
+
 ![](qa.png)
 ![](qj.jpg)
+
 18.SR-latch(SR锁存器)
+
 <https://wenku.baidu com/view/55a228e7d4bbfd0a79563c1ec5da50e2524dd1d8.html>
+
 
 # Chapter 5  Computing Components(组件)
 ![](qs.png)
