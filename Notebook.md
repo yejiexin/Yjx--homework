@@ -416,7 +416,7 @@ For example, if the maximum number of decimal digits we can represent is <font c
 
 3、A formula for computing the negative representation
 
-**Negative(I) = 10<sup>k-I</sub>**, **where k is the number of digits**
+**Negative(I) = 10<sup>k</sub> - I **, **where k is the number of digits**
 
 This reprentation of negative numbers is called the **ten's complement**
 
@@ -596,7 +596,7 @@ A mercury thermometer(水银温度计) is an analog device. The mercury rises in
 
 2、The Unicode(统一码) character set uses **16 bits per character**.Therefore, the Unicode character set can represent 256,or over 65 thousand, characters.
 
-3、Unicode was designed to be a superset of ASCII.That is, the first 256 characters in the Unicode character set correspond exactly to the extended ASCCII character set.
+3、Unicode was designed to be a superset of ASCII.That is, the first 256 characters in the Unicode character set correspond exactly to the extended ASCII character set.
 
 ![](xc.png)
 ![](xv.png)
@@ -630,7 +630,7 @@ A mercury thermometer(水银温度计) is an analog device. The mercury rises in
 
 11. text Compression(压缩)
 
-It is important that we find ways to store and transmit text efficiently, which means we must find ways to ccompress text.
+It is important that we find ways to store and transmit text efficiently, which means we must find ways to compress text.
 
 –**keyword encoding**
 
@@ -714,7 +714,7 @@ Then the bit stream is compressed using a form of **Huffman encoding** to achiev
 
 1、**<font color="#00FFFF">Gate(门)</font><br/>**   A devive that performs a basic operation on electrical signals
 
-2、**<font color=#00FFFF>Circuits(电路)</font><br /> **  Gates combined to perform more complicated tasks 
+2、**<font color=#00FFFF>Circuits(电路)</font><br />**  Gates combined to perform more complicated tasks 
 
 3、There are three different, but equally powerful, notational methods for describing the behavior of gates and circuits
 
@@ -726,7 +726,7 @@ Then the bit stream is compressed using a form of **Huffman encoding** to achiev
 
 2. Constructing Gates
 
-**<font color=#00FFFF>Transistor</font><br /> **   A device that acts, dpending on the voltage level of an input signal, either as a wrie that conducts electricity or as a resistor that blocks the flow of electricity
+**<font color=#00FFFF>Transistor</font><br />**   A device that acts, dpending on the voltage level of an input signal, either as a wrie that conducts electricity or as a resistor that blocks the flow of electricity
 
 -A transistor has no moving parts, yet acts like a switch
 
@@ -1005,7 +1005,7 @@ CPU64位是指处理器的**位宽(Bit width**，也就是指微处理器一次�
 1、64位CPU一次就能处理64位即8个字节的数据。
 2、理论上在一个时钟周期内64位系统处理的数据量是32位系统的两倍。
 3、64位CPU的优势还体现在系统对内存的控制上。由于地址使用的是特殊的整数，而64位CPU的一个ALU（算术逻辑运算器）和寄存器可以处理更大的整数，也就是更大的地址。
-13. Flowof Infformation
+13. Flow of Information
 The parts are connected to one another by a collection of wires called a <font color=#00FFFF>bus</font><br/>
 ![](qk.png)
 14. Input/Output Units 
@@ -2076,3 +2076,17 @@ ps：KPA（Key Process Area )意为关键过程领域，这些关键过程域指
 
 <font color=#DC143C></font><br/>
 <font color=#00FFFF></font><br/>
+
+
+
+
+
+$({a+b)}^{a-b}$
+
+$$ x = d\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+$\frac{a+b}{c+d}$　或　$1 \over 3$
+
+$\vec{a} \cdot \vec{b}=0$
+
+$f(x_1,x_2,\ldots,x^n) = x_1^2 + x_2^2 + \cdots + x_n^2$
